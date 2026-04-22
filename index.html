@@ -1,263 +1,437 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matra - tracking, dados e mídia paga orientada a resultado</title>
+  <meta name="description" content="A maioria das empresas não tem problema de tráfego. Tem problema de base. Sem dados confiáveis, cada real investido em anúncio vira decisão no escuro. A Matra organiza a base antes de escalar mídia.">
+  <link rel="canonical" href="https://matrabr.com/">
 
-<!-- SEO -->
-<title>Matra — menos ruído. mais resultado.</title>
-<meta name="description" content="Agência de performance e dados para PMEs em Mogi Guaçu, SP. Organizamos tracking e dados antes de escalar mídia — diagnóstico gratuito.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.matrabr.com/">
+  <!-- Favicon oficial -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
 
-<!-- OpenGraph -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.matrabr.com/">
-<meta property="og:title" content="Matra — menos ruído. mais resultado.">
-<meta property="og:description" content="Agência de performance e dados para PMEs. Organizamos tracking e base antes de escalar mídia. Mogi Guaçu, SP.">
-<meta property="og:image" content="https://www.matrabr.com/assets/img/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Matra">
+  <!-- Preconnect fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Matra — menos ruído. mais resultado.">
-<meta name="twitter:description" content="Agência de performance e dados para PMEs. Organizamos tracking e base antes de escalar mídia. Mogi Guaçu, SP.">
-<meta name="twitter:image" content="https://www.matrabr.com/assets/img/og-image.jpg">
+  <!-- Fonte editorial (Libre Baskerville) + fallback sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-<!-- Favicon -->
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/favicon.ico" sizes="32x32 16x16" type="image/x-icon">
-<link rel="icon" href="assets/img/favicon-192.png" sizes="192x192" type="image/png">
-<link rel="icon" href="assets/img/favicon-512.png" sizes="512x512" type="image/png">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-<!-- Schema.org LocalBusiness -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Matra",
-  "description": "Agência de performance e dados focada em PMEs. Organizamos tracking e base de dados antes de escalar campanhas de mídia paga.",
-  "url": "https://www.matrabr.com",
-  "telephone": "+5519999136342",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Mogi Guaçu",
-    "addressRegion": "SP",
-    "addressCountry": "BR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -22.3717,
-    "longitude": -46.9414
-  },
-  "sameAs": [
-    "https://www.instagram.com/matra.br"
-  ],
-  "knowsAbout": [
-    "Tracking digital",
-    "Google Tag Manager",
-    "Meta Ads",
-    "Google Ads",
-    "Análise de dados",
-    "Performance marketing"
-  ]
-}
-</script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Matra - menos ruído. mais resultado.">
+  <meta property="og:description" content="Anúncio sem base confiável é dinheiro virando chute. A Matra organiza tracking, dados e mídia para decisão de negócio, não métrica de vaidade.">
+  <meta property="og:image" content="https://matrabr.com/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://matrabr.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Matra - menos ruído. mais resultado.">
+  <meta name="twitter:description" content="Anúncio sem base confiável é dinheiro virando chute. A Matra organiza tracking, dados e mídia para decisão de negócio.">
+  <meta name="twitter:image" content="https://matrabr.com/assets/img/og-image.jpg">
 
-<!-- Google Tag Manager — adicionar GTM-XXXXXXX quando disponível -->
-<!--
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
-new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
-"https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,"script","dataLayer","GTM-XXXXXXX");</script>
--->
+  <!-- Schema.org ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Matra",
+    "description": "Agência de performance e dados. Tracking, mensuração e mídia paga orientada a resultado.",
+    "url": "https://matrabr.com",
+    "telephone": "+5519999136342",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mogi Guaçu",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://instagram.com/matra.br"
+    ]
+  }
+  </script>
+
+  <!-- GTM placeholder (ativar quando container existir) -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) — adicionar GTM-XXXXXXX quando disponível -->
-<!--
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
--->
+  <!-- GTM noscript placeholder -->
+  <!--
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  -->
 
-<nav>
-  <a href="#" class="nav-logo">
-    <img src="assets/img/logo.svg" alt="Matra" width="120" height="48">
+  <!-- ============== HEADER ============== -->
+  <header class="site-header" data-section="header">
+    <div class="container site-header__inner">
+      <a href="#top" class="logo" aria-label="Matra - página inicial">
+        <img src="/assets/img/logo-preto.svg" alt="Matra" width="140" height="44">
+      </a>
+      <a href="#como-funciona"
+         class="btn btn--ghost btn--sm"
+         data-track="cta_click" data-section="header" data-label="anchor_como_funciona">
+        Como funciona
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============== HERO ============== -->
+    <section class="hero" data-section="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">performance e dados</p>
+        <h1 class="hero__title">
+          você investe em marketing<br>
+          <em>mas não sabe o que está funcionando.</em>
+        </h1>
+        <p class="hero__sub">
+          Não importa se já investe ou vai começar.
+          Sem dados organizados, toda decisão vira um chute.
+          A Matra organiza a base antes de escalar qualquer real.
+        </p>
+        <div class="hero__ctas">
+          <a href="#como-funciona" class="btn btn--primary"
+             data-track="cta_click" data-section="hero" data-label="anchor_como_funciona">
+            Entender como funciona
+          </a>
+          <a href="#metodo-impacto" class="btn btn--link">
+            Ver impacto financeiro →
+          </a>
+        </div>
+        <p class="hero__trust">
+          método em 3 etapas · dado antes de anúncio
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== DOR / RECONHECIMENTO ============== -->
+    <section class="section section--dark" data-section="dor">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">onde o dinheiro escorre</p>
+        <h2 class="section__title">
+          não é problema de tráfego. <em>é problema de base.</em>
+        </h2>
+        <p class="section__lead section__lead--inverse">
+          Sem base organizada, o orçamento de mídia paga vaza todo mês por três lugares:
+          canal errado, público errado e relatório que não mostra o real. O prejuízo não aparece
+          numa linha do extrato. Aparece no resultado que não chega.
+        </p>
+
+        <ul class="pains">
+          <li class="pain">
+            <span class="pain__tri" aria-hidden="true"></span>
+            <p>"Gasto todo mês e não sei qual canal realmente traz cliente."</p>
+          </li>
+          <li class="pain">
+            <span class="pain__tri" aria-hidden="true"></span>
+            <p>"O relatório da agência tem 40 métricas. Não sei em qual olhar."</p>
+          </li>
+          <li class="pain">
+            <span class="pain__tri" aria-hidden="true"></span>
+            <p>"Meu Pixel e o GA4 mostram números diferentes. Não confio em nenhum."</p>
+          </li>
+          <li class="pain">
+            <span class="pain__tri" aria-hidden="true"></span>
+            <p>"Aumentei o orçamento e o resultado não acompanhou."</p>
+          </li>
+          <li class="pain">
+            <span class="pain__tri" aria-hidden="true"></span>
+            <p>"Já troquei de gestor três vezes e o problema continua."</p>
+          </li>
+          <li class="pain">
+            <span class="pain__tri" aria-hidden="true"></span>
+            <p>"Tomo decisão de investimento no feeling. Nunca na métrica."</p>
+          </li>
+        </ul>
+
+        <p class="section__closer">
+          Nada disso se resolve aumentando verba. Se resolve organizando a base.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============== COMO FUNCIONA / MÉTODO ============== -->
+    <section class="section" id="como-funciona" data-section="metodo">
+      <div class="container">
+        <p class="eyebrow">como a Matra resolve</p>
+        <h2 class="section__title">
+          três etapas. <em>nessa ordem.</em>
+        </h2>
+        <p class="section__lead">
+          O processo respeita uma sequência porque cada etapa depende da anterior.
+          Não faz sentido otimizar campanha se o dado que alimenta a otimização está errado.
+        </p>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step__num">01</div>
+            <div class="step__content">
+              <h3>Diagnóstico</h3>
+              <p class="step__lead">Entender o cenário antes de prometer qualquer coisa.</p>
+              <p>
+                Auditoria de tracking, pixels, eventos e fontes de dados. Mapeamos onde a
+                mensuração está furada, o que isso está custando em decisão ruim, e quais
+                gaps priorizar. Entrega: relatório objetivo com plano de correção.
+              </p>
+            </div>
+          </li>
+
+          <li class="step">
+            <div class="step__num">02</div>
+            <div class="step__content">
+              <h3>Estruturação</h3>
+              <p class="step__lead">Base limpa antes de qualquer real investido em mídia.</p>
+              <p>
+                Configuração de GTM, eventos de conversão, GA4, Meta Pixel, integrações
+                server-side quando necessário, e padronização de UTMs. A partir daqui,
+                o número que você olha corresponde a algo real que aconteceu.
+              </p>
+            </div>
+          </li>
+
+          <li class="step">
+            <div class="step__num">03</div>
+            <div class="step__content">
+              <h3>Mídia e otimização</h3>
+              <p class="step__lead">Campanhas no Meta e Google rastreadas até o cliente final.</p>
+              <p>
+                Gestão com foco em receita rastreada, não em volume de clique. Relatórios
+                com três a cinco números que importam, não cinquenta métricas que confundem.
+                Reuniões quinzenais objetivas, decisão baseada em dado.
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <!-- Impacto financeiro -->
+        <aside class="impact" id="metodo-impacto">
+          <p class="impact__eyebrow">exemplo simples</p>
+          <p class="impact__text">
+            Empresa investindo <strong>R$ 10 mil/mês</strong> em Meta e Google, com
+            eventos duplicados e conversão contada em lugar errado. Ao organizar a base,
+            descobre que <strong>um dos canais não estava trazendo cliente novo</strong>.
+            Estava só atribuindo venda de quem já conhecia a marca. Resultado: cerca de
+            <strong>R$ 3 a 4 mil/mês redistribuídos</strong> para o que realmente performa.
+            Sem aumentar a verba.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============== SERVIÇOS ============== -->
+    <section class="section section--alt" data-section="servicos">
+      <div class="container">
+        <p class="eyebrow">o que entregamos</p>
+        <h2 class="section__title">estrutura que sustenta <em>resultado.</em></h2>
+
+        <div class="services">
+          <article class="service">
+            <span class="service__tri" aria-hidden="true"></span>
+            <h3>Diagnóstico de tracking</h3>
+            <p>Descobrir exatamente onde o dado está furado. E quanto isso está custando em mídia mal investida.</p>
+          </article>
+          <article class="service">
+            <span class="service__tri" aria-hidden="true"></span>
+            <h3>Base de dados organizada</h3>
+            <p>Pixels, eventos e integrações configurados do jeito certo. Você passa a confiar no número que vê.</p>
+          </article>
+          <article class="service">
+            <span class="service__tri" aria-hidden="true"></span>
+            <h3>Mídia paga com destino</h3>
+            <p>Campanhas Meta e Google direcionadas ao que traz cliente, não ao que traz clique.</p>
+          </article>
+          <article class="service">
+            <span class="service__tri" aria-hidden="true"></span>
+            <h3>Relatório que gera decisão</h3>
+            <p>Três a cinco números por mês. Os que mudam o próximo passo. Nada além.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== DIFERENCIAL ============== -->
+    <section class="section section--dark" data-section="diferencial">
+      <div class="container">
+        <p class="eyebrow eyebrow--light">a diferença</p>
+        <h2 class="section__title">
+          sem dado, é chute. <em>a gente não chuta.</em>
+        </h2>
+
+        <div class="compare">
+          <div class="compare__head compare__head--left">o mercado diz</div>
+          <div class="compare__head compare__head--right">a Matra entrega</div>
+
+          <div class="compare__row">
+            <div class="compare__cell compare__cell--left">potencializamos sua presença digital</div>
+            <div class="compare__cell compare__cell--right">você vai saber de onde vem cada cliente</div>
+          </div>
+          <div class="compare__row">
+            <div class="compare__cell compare__cell--left">estratégias personalizadas para o seu negócio</div>
+            <div class="compare__cell compare__cell--right">tracking correto muda a decisão, decisão muda o resultado</div>
+          </div>
+          <div class="compare__row">
+            <div class="compare__cell compare__cell--left">relatórios completos com mais de 50 métricas</div>
+            <div class="compare__cell compare__cell--right">três números, os que importam</div>
+          </div>
+          <div class="compare__row">
+            <div class="compare__cell compare__cell--left">aumento de 300% no tráfego garantido</div>
+            <div class="compare__cell compare__cell--right">mais tráfego não é a meta. decisão melhor é</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== FAQ ============== -->
+    <section class="section" id="faq" data-section="faq">
+      <div class="container container--narrow">
+        <p class="eyebrow">perguntas frequentes</p>
+        <h2 class="section__title">o que costumam <em>perguntar antes.</em></h2>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>
+              <span>Minha agência já cuida do tráfego. A Matra substitui ela?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__body">
+              <p>Depende. Se a sua agência já organiza tracking, mensuração e reporta com clareza, a Matra pode entrar só com uma análise pontual. Se você não confia nos números que recebe, a gente assume o escopo completo: tracking, dados e mídia.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>Em quanto tempo vejo resultado?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__body">
+              <p>A primeira entrega é a análise da operação, em até duas semanas. Depois da estruturação, o ganho começa a aparecer já no primeiro mês de mídia. E se consolida no terceiro, quando o dado já é confiável o bastante pra decisão ficar óbvia.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>Quanto custa?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__body">
+              <p>A análise inicial é sem custo. O escopo depois disso varia com o tamanho da operação e o estado da base. Conversamos pra entender o cenário e passamos um valor honesto. Sem pacote fechado, sem surpresa.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>E sobre garantia de resultado?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__body">
+              <p>Garantimos método e transparência. O método é o mesmo que usamos com qualquer cliente: diagnóstico, estruturação e mídia rastreada. A cada etapa você entende o que foi feito, por quê, e qual foi o efeito. Sem caixa preta.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>Atendem fora de Mogi Guaçu?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__body">
+              <p>Sim. Operação 100% remota. Reuniões por vídeo, entregas digitais. Atendemos Brasil inteiro.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>
+              <span>Ainda não invisto em mídia paga. Faz sentido conversar?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq__body">
+              <p>Faz, e é o cenário ideal. Começar com a base organizada desde o primeiro real investido evita todo o prejuízo de corrigir depois. Nesses casos a etapa 1 é bem mais curta, porque não há histórico de tracking quebrado pra desfazer.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== CTA FINAL ============== -->
+    <section class="section cta-final" id="contato" data-section="cta-final">
+      <div class="container container--narrow cta-final__inner">
+        <p class="eyebrow eyebrow--light">próximo passo</p>
+        <h2 class="cta-final__title">
+          uma análise real da sua <em>operação.</em>
+        </h2>
+        <p class="cta-final__sub">
+          Em uma conversa de 20 a 30 minutos, olhamos o que já existe no seu tracking,
+          campanhas e relatórios, e apontamos onde a operação está perdendo dinheiro
+          e onde tem espaço pra crescer sem aumentar verba. No fim, você sai com clareza,
+          mesmo que não feche nada.
+        </p>
+
+        <a href="https://wa.me/5519999136342?text=Ol%C3%A1%2C%20quero%20uma%20an%C3%A1lise%20da%20minha%20opera%C3%A7%C3%A3o%20com%20a%20Matra."
+           class="btn btn--primary btn--lg"
+           target="_blank" rel="noopener noreferrer"
+           data-track="cta_click" data-section="cta-final" data-label="whatsapp_final">
+          Solicitar análise pelo WhatsApp
+        </a>
+
+        <p class="cta-final__meta">
+          sem pacote fechado · sem promessa de resultado · sem caixa preta
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer" data-section="footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a href="#top" class="logo logo--light" aria-label="Matra">
+          <img src="/assets/img/logo-branco.svg" alt="Matra" width="140" height="44">
+        </a>
+        <p class="site-footer__tagline">menos ruído. mais resultado.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Links">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="site-footer__social">
+        <a href="https://instagram.com/matra.br" target="_blank" rel="noopener noreferrer"
+           data-track="social_click" data-label="instagram">Instagram</a>
+        <a href="https://wa.me/5519999136342" target="_blank" rel="noopener noreferrer"
+           data-track="social_click" data-label="whatsapp_footer">WhatsApp</a>
+      </div>
+
+      <p class="site-footer__copy">
+        © <span id="year"></span> Matra · Mogi Guaçu, SP
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============== WHATSAPP FLUTUANTE (aparece só depois do método) ============== -->
+  <a href="https://wa.me/5519999136342?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Matra%20e%20quero%20entender%20melhor."
+     class="wa-float"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Conversar no WhatsApp"
+     data-track="cta_click" data-section="float" data-label="whatsapp_float">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16.002 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.595 4.466 1.725 6.4L3.2 28.8l6.56-1.706a12.742 12.742 0 0 0 6.24 1.6h.005c7.064 0 12.795-5.73 12.795-12.8 0-3.42-1.333-6.637-3.754-9.058A12.72 12.72 0 0 0 16.002 3.2Zm0 23.31h-.004a10.64 10.64 0 0 1-5.42-1.485l-.39-.232-4.05 1.054 1.08-3.946-.254-.403a10.63 10.63 0 0 1-1.632-5.698c0-5.88 4.785-10.666 10.67-10.666 2.848 0 5.525 1.11 7.54 3.126a10.584 10.584 0 0 1 3.126 7.544c0 5.88-4.785 10.706-10.666 10.706Zm5.85-7.98c-.32-.16-1.896-.935-2.19-1.042-.294-.107-.508-.16-.722.16-.213.32-.83 1.042-1.017 1.255-.187.213-.374.24-.694.08-.32-.16-1.352-.498-2.575-1.587-.952-.848-1.594-1.895-1.78-2.215-.187-.32-.02-.493.14-.653.143-.142.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.722-1.738-.99-2.38-.26-.624-.527-.54-.722-.55l-.614-.01c-.213 0-.56.08-.853.4-.294.32-1.122 1.094-1.122 2.67 0 1.575 1.148 3.099 1.308 3.312.16.213 2.256 3.443 5.465 4.83.764.33 1.36.527 1.825.674.767.245 1.464.21 2.015.128.615-.092 1.896-.775 2.164-1.524.267-.747.267-1.39.187-1.524-.08-.133-.294-.213-.614-.373Z"/>
+    </svg>
   </a>
-  <a href="#contato" class="nav-cta">Fale conosco</a>
-</nav>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="hero-headline">
-      a maioria das empresas<br>
-      não tem problema de tráfego.<br>
-      <em>tem problema de base.</em>
-    </h1>
-    <p class="hero-sub">dados incompletos, eventos mal configurados,<br>decisões tomadas no escuro.</p>
-    <a href="#contato" class="hero-cta">Fale com a Matra</a>
-  </div>
-  <div class="hero-bottom">
-    <p class="hero-slogan">menos ruído. <strong>mais resultado.</strong></p>
-    <div class="hero-icone">
-      <img src="assets/img/triangle-light.svg" alt="" aria-hidden="true" width="60" height="60">
-    </div>
-  </div>
-</section>
-
-<section class="problema">
-  <div class="reveal">
-    <span class="problema-label">O diagnóstico</span>
-    <h2 class="problema-headline">você investe em anúncios.<br>mas sabe de onde vem<br><em>cada cliente?</em></h2>
-  </div>
-  <div class="problema-direita reveal">
-    <p>O problema não está no tráfego. Está na base que sustenta as decisões.</p>
-    <p>Sem tracking correto, você otimiza campanhas com dados errados — e desperdiça orçamento sem saber.</p>
-    <p>A Matra organiza essa base antes de escalar qualquer campanha.</p>
-  </div>
-</section>
-
-<section class="servicos">
-  <div class="servicos-header reveal">
-    <span class="servicos-label">O que fazemos</span>
-    <h2 class="servicos-titulo">estrutura que sustenta resultado.</h2>
-  </div>
-  <div class="servicos-grid">
-    <div class="servico reveal">
-      <span class="servico-num">01</span>
-      <div class="servico-icone">
-        <img src="assets/img/triangle-light.svg" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
-      </div>
-      <h3 class="servico-nome">Diagnóstico de tracking</h3>
-      <p class="servico-desc">Auditoria completa da mensuração. Identificamos onde seus dados falham antes de investir mais.</p>
-    </div>
-    <div class="servico reveal">
-      <span class="servico-num">02</span>
-      <div class="servico-icone">
-        <img src="assets/img/triangle-light.svg" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
-      </div>
-      <h3 class="servico-nome">Estruturação de dados</h3>
-      <p class="servico-desc">Configuração de eventos, pixels e integrações. Base limpa para decisões confiáveis.</p>
-    </div>
-    <div class="servico reveal">
-      <span class="servico-num">03</span>
-      <div class="servico-icone">
-        <img src="assets/img/triangle-light.svg" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
-      </div>
-      <h3 class="servico-nome">Gestão de mídia paga</h3>
-      <p class="servico-desc">Campanhas no Meta e Google com foco em resultado rastreado — não em volume de clique.</p>
-    </div>
-    <div class="servico reveal">
-      <span class="servico-num">04</span>
-      <div class="servico-icone">
-        <img src="assets/img/triangle-light.svg" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
-      </div>
-      <h3 class="servico-nome">Análise de performance</h3>
-      <p class="servico-desc">Relatórios com os números que importam. Sem ruído, sem métrica de vaidade.</p>
-    </div>
-  </div>
-</section>
-
-<section class="pilares">
-  <div class="pilares-header reveal">
-    <span class="pilares-label">Como trabalhamos</span>
-    <h2 class="pilares-titulo">três pilares. uma direção.</h2>
-  </div>
-  <div class="pilares-grid">
-    <div class="pilar reveal">
-      <span class="pilar-num">01</span>
-      <div class="pilar-icone">
-        <img src="assets/img/triangle-dark.svg" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
-      </div>
-      <h3 class="pilar-nome">Medida</h3>
-      <p class="pilar-desc">Você só pode melhorar o que consegue medir. A Matra começa onde os outros terminam: nos dados.</p>
-    </div>
-    <div class="pilar reveal">
-      <span class="pilar-num">02</span>
-      <div class="pilar-icone">
-        <img src="assets/img/triangle-dark.svg" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
-      </div>
-      <h3 class="pilar-nome">Clareza</h3>
-      <p class="pilar-desc">Dado sem interpretação é ruído. A Matra transforma número em decisão.</p>
-    </div>
-    <div class="pilar reveal">
-      <span class="pilar-num">03</span>
-      <div class="pilar-icone">
-        <img src="assets/img/triangle-dark.svg" alt="" aria-hidden="true" width="40" height="40" loading="lazy">
-      </div>
-      <h3 class="pilar-nome">Resultado</h3>
-      <p class="pilar-desc">Tráfego sem conversão é vaidade. Cada real investido tem destino rastreado.</p>
-    </div>
-  </div>
-</section>
-
-<section class="diferencial">
-  <div class="diferencial-left reveal">
-    <span class="diferencial-label">A diferença</span>
-    <h2 class="diferencial-titulo">sem dado,<br>é chute.<br><br><em>a gente<br>não chuta.</em></h2>
-  </div>
-  <div class="comparacao reveal">
-    <div class="comp-header-row">
-      <span class="comp-col-label nao">o mercado diz</span>
-      <span class="comp-col-label sim">a Matra entrega</span>
-    </div>
-    <div class="comp-item">
-      <div class="comp-nao"><p>Potencializamos sua presença digital</p></div>
-      <div class="comp-sim"><p>Você vai saber de onde vem cada cliente</p></div>
-    </div>
-    <div class="comp-item">
-      <div class="comp-nao"><p>Estratégias personalizadas para o seu negócio</p></div>
-      <div class="comp-sim"><p>Tracking correto muda a decisão. A decisão muda o resultado</p></div>
-    </div>
-    <div class="comp-item">
-      <div class="comp-nao"><p>Relatórios completos com mais de 50 métricas</p></div>
-      <div class="comp-sim"><p>Três números. Os que importam</p></div>
-    </div>
-    <div class="comp-item">
-      <div class="comp-nao"><p>Aumento de 300% no tráfego garantido</p></div>
-      <div class="comp-sim"><p>Mais tráfego não é a meta. Decisão melhor é</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="cta" id="contato">
-  <div class="cta-left reveal">
-    <span class="cta-label">Vamos conversar</span>
-    <h2 class="cta-headline">sua base está<br><em>organizada?</em></h2>
-    <p class="cta-sub">Diagnóstico gratuito, sem compromisso.<br>Uma conversa para entender onde estão os gaps.</p>
-  </div>
-  <div class="cta-right reveal">
-    <a href="https://wa.me/5519999136342" class="cta-btn" target="_blank" rel="noopener">falar com a Matra</a>
-    <p class="cta-nota">via WhatsApp · resposta rápida</p>
-    <div class="cta-diagnostico">
-      <p>Sem promessa de resultado imediato. Sem pacote fechado. O primeiro passo é entender o seu cenário.</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-logo">
-    <img src="assets/img/logo.svg" alt="Matra" width="100" height="40" loading="lazy">
-  </div>
-  <span class="footer-slogan">menos ruído. mais resultado.</span>
-  <div class="footer-links">
-    <a href="https://instagram.com/matra.br" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://wa.me/5519999136342" target="_blank" rel="noopener">WhatsApp</a>
-  </div>
-</footer>
-
-<script src="assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
